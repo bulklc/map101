@@ -372,6 +372,9 @@
                     <tr>\
                         <td colspan="2"><strong>City, State Anagram</strong><br />' + (feature.properties['Anagram'] !== null ? Autolinker.link(String(feature.properties['Anagram'])) : '') + '</td>\
                     </tr>\
+		    <tr>\
+                        <td colspan="2"><strong>More Info</strong><br />' + (feature.properties['info'] !== null ? Autolinker.link(String(feature.properties['info'])) : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent);
         }
