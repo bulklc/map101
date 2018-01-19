@@ -369,6 +369,9 @@
                     <tr>\
                         <td colspan="2"><strong>Cost to New York City</strong><br />' + (feature.properties['TO JFK B'] !== null ? Autolinker.link(String(feature.properties['TO JFK B'])) : '') + '</td>\
                     </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>City, State Anagram</strong><br />' + (feature.properties['Anagram'] !== null ? Autolinker.link(String(feature.properties['Anagram'])) : '') + '</td>\
+                    </tr>\
                 </table>';
             layer.bindPopup(popupContent);
         }
